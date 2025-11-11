@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SIMULASI ASESMEN SUMATIF SEMESTER GANJIL TP. 2025/2026 – Bahasa Indonesia Kelas 4</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--red:#b91c1c;--white:#fff;--muted:#111827}
+body{font-family:'Poppins',sans-serif;background:#fff;margin:0;padding:20px;color:var(--muted)}
+.container{max-width:1024px;margin:auto;background:#fff;border:6px solid var(--red);border-radius:10px;box-shadow:0 6px 24px rgba(0,0,0,.08)}
+.header{background:var(--red);color:var(--white);padding:18px;text-align:center;border-radius:6px 6px 0 0}
+.header img{height:96px;background:#fff;padding:6px;border-radius:8px}
+.title{font-size:20px;font-weight:600}
+.subtitle{font-size:14px;opacity:.95}
+.content{padding:20px}
+.form-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.form-row label{min-width:80px}
+.input{padding:8px 10px;border:1px solid #ddd;border-radius:8px}
+.question{border:1px solid #ddd;padding:14px;border-radius:8px;margin-bottom:12px;background:#fff}
+.qtext{margin-bottom:8px}
+.options label{display:block;margin:6px 0}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.result{margin-top:16px;padding:12px;background:#f3f4f6;border-radius:8px}
+.footer{padding:12px;text-align:center;background:#fff;border-top:4px solid #fee2e2;font-weight:600}
+button{background:var(--red);color:#fff;border:none;padding:10px 14px;border-radius:8px;cursor:pointer}
+button.small{background:#fff;color:var(--red);border:1px solid var(--red)}
+@media print{button,.controls,.form-row{display:none!important}}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<div class="title">SDN CIKETINGUDIK 2</div>
+<div class="subtitle">SIMULASI ASESMEN SUMATIF SEMESTER GANJIL TP. 2025/2026 BAHASA INDONESIA KELAS 4</div>
+</div>
+<div class="content">
+<form id="quizForm">
+<div class="form-row">
+<label>Nama Siswa</label><input class="input" id="studentName" placeholder="Nama lengkap...">
+<label>Kelas</label><input class="input" id="studentClass" placeholder="Contoh: 4A">
+</div>
+
+<!-- Soal 1 – 6 -->
+<div class="question" id="q1"><div class="qtext"><b>1.</b> Dina membaca sebuah buku cerita.<br>Manakah kalimat yang merupakan contoh kalimat transitif?</div>
+<div class="options">
+<label><input type="radio" name="q1" value="A"> A. Dina membaca sebuah buku cerita.</label>
+<label><input type="radio" name="q1" value="B"> B. Buku itu berisi kisah petualangan.</label>
+<label><input type="radio" name="q1" value="C"> C. Seorang anak di hutan ajaib.</label>
+<label><input type="radio" name="q1" value="D"> D. Dina sedang belajar.</label>
+</div></div>
+
+<div class="question" id="q2"><div class="qtext"><b>2.</b> Burung-burung berkicau merdu di pagi hari.<br>Kalimat tersebut tergolong jenis kalimat apa?</div>
+<div class="options">
+<label><input type="radio" name="q2" value="A"> A. Kalimat transitif</label>
+<label><input type="radio" name="q2" value="B"> B. Kalimat intransitif</label>
+<label><input type="radio" name="q2" value="C"> C. Kalimat aktif</label>
+<label><input type="radio" name="q2" value="D"> D. Kalimat pasif</label>
+</div></div>
+
+<div class="question" id="q3"><div class="qtext"><b>3.</b> Ketika ibu marah, wajahnya berubah merah padam.<br>Makna denotatif frasa 'merah padam' adalah...</div>
+<div class="options">
+<label><input type="radio" name="q3" value="A"> A. Sangat marah</label>
+<label><input type="radio" name="q3" value="B"> B. Malu sekali</label>
+<label><input type="radio" name="q3" value="C"> C. Warna merah yang sangat gelap atau tua</label>
+<label><input type="radio" name="q3" value="D"> D. Wajah yang cerah</label>
+</div></div>
+
+<div class="question" id="q4"><div class="qtext"><b>4.</b> Setelah seharian bermain, adik merasa sangat lelah.<br>Ide pokok paragraf tersebut adalah...</div>
+<div class="options">
+<label><input type="radio" name="q4" value="A"> A. Adik yang kelelahan dan tertidur</label>
+<label><input type="radio" name="q4" value="B"> B. Kegiatan ibu menyelimuti adik</label>
+<label><input type="radio" name="q4" value="C"> C. Kamar adik yang sunyi senyap</label>
+<label><input type="radio" name="q4" value="D"> D. Adik bermain seharian</label>
+</div></div>
+
+<div class="question" id="q5"><div class="qtext"><b>5.</b> Kakak sedang membaca koran di teras rumah.<br>Kata kerja berawalan 'me-' pada kalimat tersebut bermakna...</div>
+<div class="options">
+<label><input type="radio" name="q5" value="A"> A. Melakukan suatu perbuatan</label>
+<label><input type="radio" name="q5" value="B"> B. Menuju ke suatu tempat</label>
+<label><input type="radio" name="q5" value="C"> C. Memiliki sifat</label>
+<label><input type="radio" name="q5" value="D"> D. Melakukan perbuatan dengan alat</label>
+</div></div>
+
+<div class="question" id="q6"><div class="qtext"><b>6.</b> Adik melihat kucing di halaman dan memberi makan.<br>Manakah kata yang menunjukkan tindakan memberi?</div>
+<div class="options">
+<label><input type="radio" name="q6" value="A"> A. Melihat</label>
+<label><input type="radio" name="q6" value="B"> B. Memberi</label>
+<label><input type="radio" name="q6" value="C"> C. Makan</label>
+<label><input type="radio" name="q6" value="D"> D. Di halaman</label>
+</div></div>
+<!-- Soal 7 – 12 -->
+<div class="question" id="q7"><div class="qtext"><b>7.</b> Kalimat berikut yang menggunakan tanda baca koma dengan benar adalah …</div>
+<div class="options">
+<label><input type="radio" name="q7" value="A"> A. Ayah, ibu dan kakak pergi ke pasar.</label>
+<label><input type="radio" name="q7" value="B"> B. Ayah, ibu, dan kakak pergi ke pasar.</label>
+<label><input type="radio" name="q7" value="C"> C. Ayah ibu, dan kakak pergi ke pasar.</label>
+<label><input type="radio" name="q7" value="D"> D. Ayah ibu dan kakak, pergi ke pasar.</label>
+</div></div>
+
+<div class="question" id="q8"><div class="qtext"><b>8.</b> Perhatikan kalimat berikut!<br>“Rani rajin menabung sejak kecil.”<br>Kata yang menjadi predikat adalah …</div>
+<div class="options">
+<label><input type="radio" name="q8" value="A"> A. Rani</label>
+<label><input type="radio" name="q8" value="B"> B. Rajin</label>
+<label><input type="radio" name="q8" value="C"> C. Menabung</label>
+<label><input type="radio" name="q8" value="D"> D. Sejak</label>
+</div></div>
+
+<div class="question" id="q9"><div class="qtext"><b>9.</b> Antonim dari kata “naik” yang tepat adalah …</div>
+<div class="options">
+<label><input type="radio" name="q9" value="A"> A. Turun</label>
+<label><input type="radio" name="q9" value="B"> B. Rendah</label>
+<label><input type="radio" name="q9" value="C"> C. Jatuh</label>
+<label><input type="radio" name="q9" value="D"> D. Kurang</label>
+</div></div>
+
+<div class="question" id="q10"><div class="qtext"><b>10.</b> Bacalah kalimat berikut!<br>“Paman memelihara ayam di belakang rumah.”<br>Kata berimbuhan pada kalimat di atas adalah …</div>
+<div class="options">
+<label><input type="radio" name="q10" value="A"> A. Paman</label>
+<label><input type="radio" name="q10" value="B"> B. Memelihara</label>
+<label><input type="radio" name="q10" value="C"> C. Ayam</label>
+<label><input type="radio" name="q10" value="D"> D. Rumah</label>
+</div></div>
+
+<div class="question" id="q11"><div class="qtext"><b>11.</b> Kalimat yang menggunakan tanda seru dengan tepat adalah …</div>
+<div class="options">
+<label><input type="radio" name="q11" value="A"> A. Wah betapa indahnya pemandangan ini!</label>
+<label><input type="radio" name="q11" value="B"> B. Wah, betapa indahnya pemandangan ini.</label>
+<label><input type="radio" name="q11" value="C"> C. Wah betapa indahnya pemandangan ini.</label>
+<label><input type="radio" name="q11" value="D"> D. Wah! betapa indahnya pemandangan ini</label>
+</div></div>
+
+<div class="question" id="q12"><div class="qtext"><b>12.</b> Bacalah kalimat berikut!<br>“Air sungai itu sangat jernih.”<br>Kata sifat pada kalimat tersebut adalah …</div>
+<div class="options">
+<label><input type="radio" name="q12" value="A"> A. Air</label>
+<label><input type="radio" name="q12" value="B"> B. Sungai</label>
+<label><input type="radio" name="q12" value="C"> C. Itu</label>
+<label><input type="radio" name="q12" value="D"> D. Jernih</label>
+</div></div>
+<!-- Soal 13 – 18 -->
+<div class="question" id="q13"><div class="qtext"><b>13.</b> Bacalah kalimat berikut!<br>“Para petani menanam padi di sawah.”<br>Subjek pada kalimat tersebut adalah …</div>
+<div class="options">
+<label><input type="radio" name="q13" value="A"> A. Para petani</label>
+<label><input type="radio" name="q13" value="B"> B. Menanam</label>
+<label><input type="radio" name="q13" value="C"> C. Padi</label>
+<label><input type="radio" name="q13" value="D"> D. Di sawah</label>
+</div></div>
+
+<div class="question" id="q14"><div class="qtext"><b>14.</b> Bacalah kalimat berikut!<br>“Adik menyapu halaman setiap pagi.”<br>Kata kerja pada kalimat tersebut adalah …</div>
+<div class="options">
+<label><input type="radio" name="q14" value="A"> A. Adik</label>
+<label><input type="radio" name="q14" value="B"> B. Menyapu</label>
+<label><input type="radio" name="q14" value="C"> C. Halaman</label>
+<label><input type="radio" name="q14" value="D"> D. Setiap pagi</label>
+</div></div>
+
+<div class="question" id="q15"><div class="qtext"><b>15.</b> Kalimat berikut yang merupakan kalimat perintah adalah …</div>
+<div class="options">
+<label><input type="radio" name="q15" value="A"> A. Tolong tutup pintunya!</label>
+<label><input type="radio" name="q15" value="B"> B. Pintu itu tertutup rapat.</label>
+<label><input type="radio" name="q15" value="C"> C. Pintu kamar berwarna biru.</label>
+<label><input type="radio" name="q15" value="D"> D. Pintu itu terbuka perlahan.</label>
+</div></div>
+
+<div class="question" id="q16"><div class="qtext"><b>16.</b> Bacalah kalimat berikut!<br>“Ibu membeli sayur, buah, dan ikan di pasar.”<br>Kalimat tersebut menggunakan tanda baca …</div>
+<div class="options">
+<label><input type="radio" name="q16" value="A"> A. Tanda titik dua</label>
+<label><input type="radio" name="q16" value="B"> B. Tanda seru</label>
+<label><input type="radio" name="q16" value="C"> C. Tanda koma</label>
+<label><input type="radio" name="q16" value="D"> D. Tanda titik</label>
+</div></div>
+
+<div class="question" id="q17"><div class="qtext"><b>17.</b> Kalimat berikut yang mengandung makna konotatif adalah …</div>
+<div class="options">
+<label><input type="radio" name="q17" value="A"> A. Hatinya lembut seperti kapas.</label>
+<label><input type="radio" name="q17" value="B"> B. Kapas berwarna putih bersih.</label>
+<label><input type="radio" name="q17" value="C"> C. Kapas mudah terbakar.</label>
+<label><input type="radio" name="q17" value="D"> D. Ibu membeli kapas di apotek.</label>
+</div></div>
+
+<div class="question" id="q18"><div class="qtext"><b>18.</b> Bacalah kalimat berikut!<br>“Andi berangkat sekolah pukul enam pagi.”<br>Keterangan waktu pada kalimat tersebut adalah …</div>
+<div class="options">
+<label><input type="radio" name="q18" value="A"> A. Andi</label>
+<label><input type="radio" name="q18" value="B"> B. Berangkat sekolah</label>
+<label><input type="radio" name="q18" value="C"> C. Pukul enam pagi</label>
+<label><input type="radio" name="q18" value="D"> D. Sekolah</label>
+</div></div>
+<!-- 🔚 Akhir Part 3/5 -->
+
+<!-- Soal 13 – 18 -->
+<div class="question" id="q13"><div class="qtext"><b>13.</b> Bacalah kalimat berikut!<br>“Para petani menanam padi di sawah.”<br>Subjek pada kalimat tersebut adalah …</div>
+<div class="options">
+<label><input type="radio" name="q13" value="A"> A. Para petani</label>
+<label><input type="radio" name="q13" value="B"> B. Menanam</label>
+<label><input type="radio" name="q13" value="C"> C. Padi</label>
+<label><input type="radio" name="q13" value="D"> D. Di sawah</label>
+</div></div>
+
+<div class="question" id="q14"><div class="qtext"><b>14.</b> Bacalah kalimat berikut!<br>“Adik menyapu halaman setiap pagi.”<br>Kata kerja pada kalimat tersebut adalah …</div>
+<div class="options">
+<label><input type="radio" name="q14" value="A"> A. Adik</label>
+<label><input type="radio" name="q14" value="B"> B. Menyapu</label>
+<label><input type="radio" name="q14" value="C"> C. Halaman</label>
+<label><input type="radio" name="q14" value="D"> D. Setiap pagi</label>
+</div></div>
+
+<div class="question" id="q15"><div class="qtext"><b>15.</b> Kalimat berikut yang merupakan kalimat perintah adalah …</div>
+<div class="options">
+<label><input type="radio" name="q15" value="A"> A. Tolong tutup pintunya!</label>
+<label><input type="radio" name="q15" value="B"> B. Pintu itu tertutup rapat.</label>
+<label><input type="radio" name="q15" value="C"> C. Pintu kamar berwarna biru.</label>
+<label><input type="radio" name="q15" value="D"> D. Pintu itu terbuka perlahan.</label>
+</div></div>
+
+<div class="question" id="q16"><div class="qtext"><b>16.</b> Bacalah kalimat berikut!<br>“Ibu membeli sayur, buah, dan ikan di pasar.”<br>Kalimat tersebut menggunakan tanda baca …</div>
+<div class="options">
+<label><input type="radio" name="q16" value="A"> A. Tanda titik dua</label>
+<label><input type="radio" name="q16" value="B"> B. Tanda seru</label>
+<label><input type="radio" name="q16" value="C"> C. Tanda koma</label>
+<label><input type="radio" name="q16" value="D"> D. Tanda titik</label>
+</div></div>
+
+<div class="question" id="q17"><div class="qtext"><b>17.</b> Kalimat berikut yang mengandung makna konotatif adalah …</div>
+<div class="options">
+<label><input type="radio" name="q17" value="A"> A. Hatinya lembut seperti kapas.</label>
+<label><input type="radio" name="q17" value="B"> B. Kapas berwarna putih bersih.</label>
+<label><input type="radio" name="q17" value="C"> C. Kapas mudah terbakar.</label>
+<label><input type="radio" name="q17" value="D"> D. Ibu membeli kapas di apotek.</label>
+</div></div>
+
+<div class="question" id="q18"><div class="qtext"><b>18.</b> Bacalah kalimat berikut!<br>“Andi berangkat sekolah pukul enam pagi.”<br>Keterangan waktu pada kalimat tersebut adalah …</div>
+<div class="options">
+<label><input type="radio" name="q18" value="A"> A. Andi</label>
+<label><input type="radio" name="q18" value="B"> B. Berangkat sekolah</label>
+<label><input type="radio" name="q18" value="C"> C. Pukul enam pagi</label>
+<label><input type="radio" name="q18" value="D"> D. Sekolah</label>
+</div></div>
+<!-- Soal 19 – 24 -->
+<div class="question" id="q19"><div class="qtext"><b>19.</b> Kalimat berikut yang termasuk kalimat pasif adalah …</div>
+<div class="options">
+<label><input type="radio" name="q19" value="A"> A. Ibu memasak sayur di dapur.</label>
+<label><input type="radio" name="q19" value="B"> B. Sayur dimasak oleh ibu di dapur.</label>
+<label><input type="radio" name="q19" value="C"> C. Ibu sedang memasak sayur di dapur.</label>
+<label><input type="radio" name="q19" value="D"> D. Sayur itu dimasak di dapur.</label>
+</div></div>
+
+<div class="question" id="q20"><div class="qtext"><b>20.</b> Kalimat berikut yang menggunakan tanda tanya dengan benar adalah …</div>
+<div class="options">
+<label><input type="radio" name="q20" value="A"> A. Di mana kamu tinggal?</label>
+<label><input type="radio" name="q20" value="B"> B. Di mana kamu tinggal.</label>
+<label><input type="radio" name="q20" value="C"> C. Di mana kamu tinggal!</label>
+<label><input type="radio" name="q20" value="D"> D. Dimana kamu tinggal</label>
+</div></div>
+
+<div class="question" id="q21"><div class="qtext"><b>21.</b> Bacalah kalimat berikut!<br>“Ayah memperbaiki sepeda di halaman.”<br>Kata berimbuhan pada kalimat di atas adalah …</div>
+<div class="options">
+<label><input type="radio" name="q21" value="A"> A. Ayah</label>
+<label><input type="radio" name="q21" value="B"> B. Memperbaiki</label>
+<label><input type="radio" name="q21" value="C"> C. Sepeda</label>
+<label><input type="radio" name="q21" value="D"> D. Halaman</label>
+</div></div>
+
+<div class="question" id="q22"><div class="qtext"><b>22.</b> Kalimat yang menggunakan kata depan “di” dengan benar adalah …</div>
+<div class="options">
+<label><input type="radio" name="q22" value="A"> A. Diambil oleh ayah.</label>
+<label><input type="radio" name="q22" value="B"> B. Disapu oleh ibu.</label>
+<label><input type="radio" name="q22" value="C"> C. Di rumah nenek.</label>
+<label><input type="radio" name="q22" value="D"> D. Dimasak oleh kakak.</label>
+</div></div>
+
+<div class="question" id="q23"><div class="qtext"><b>23.</b> Bacalah paragraf berikut!<br>“Setiap pagi, Sinta membantu ibu menyapu halaman. Setelah itu, ia merapikan tempat tidur.”<br>Ide pokok paragraf tersebut adalah …</div>
+<div class="options">
+<label><input type="radio" name="q23" value="A"> A. Kegiatan Sinta setiap pagi</label>
+<label><input type="radio" name="q23" value="B"> B. Sinta menyapu halaman rumah</label>
+<label><input type="radio" name="q23" value="C"> C. Ibu dan Sinta bekerja sama</label>
+<label><input type="radio" name="q23" value="D"> D. Sinta rajin belajar di rumah</label>
+</div></div>
+
+<div class="question" id="q24"><div class="qtext"><b>24.</b> Kalimat berikut yang menggunakan huruf kapital dengan benar adalah …</div>
+<div class="options">
+<label><input type="radio" name="q24" value="A"> A. Kami pergi ke pasar minggu.</label>
+<label><input type="radio" name="q24" value="B"> B. Kami pergi ke Pasar Minggu.</label>
+<label><input type="radio" name="q24" value="C"> C. Kami pergi Ke Pasar minggu.</label>
+<label><input type="radio" name="q24" value="D"> D. kami Pergi ke Pasar Minggu.</label>
+</div></div>
+<!-- Soal 25 – 30 -->
+<div class="question" id="q25"><div class="qtext"><b>25.</b> Bacalah kalimat berikut!<br>“Ayah membaca koran di ruang tamu.”<br>Kata keterangan tempat pada kalimat tersebut adalah …</div>
+<div class="options">
+<label><input type="radio" name="q25" value="A"> A. Ayah</label>
+<label><input type="radio" name="q25" value="B"> B. Membaca koran</label>
+<label><input type="radio" name="q25" value="C"> C. Di ruang tamu</label>
+<label><input type="radio" name="q25" value="D"> D. Koran</label>
+</div></div>
+
+<div class="question" id="q26"><div class="qtext"><b>26.</b> Kalimat berikut yang menggunakan tanda titik dua dengan benar adalah …</div>
+<div class="options">
+<label><input type="radio" name="q26" value="A"> A. Perhatikan benda berikut: pensil, penghapus, dan penggaris.</label>
+<label><input type="radio" name="q26" value="B"> B. Perhatikan: benda berikut pensil, penghapus, dan penggaris.</label>
+<label><input type="radio" name="q26" value="C"> C. Perhatikan benda: berikut pensil, penghapus dan penggaris.</label>
+<label><input type="radio" name="q26" value="D"> D. Perhatikan benda berikut pensil penghapus dan penggaris.</label>
+</div></div>
+
+<div class="question" id="q27"><div class="qtext"><b>27.</b> Kalimat yang menunjukkan sebab akibat adalah …</div>
+<div class="options">
+<label><input type="radio" name="q27" value="A"> A. Karena hujan deras, jalan menjadi becek.</label>
+<label><input type="radio" name="q27" value="B"> B. Jalan itu sangat ramai.</label>
+<label><input type="radio" name="q27" value="C"> C. Kami berjalan-jalan di taman.</label>
+<label><input type="radio" name="q27" value="D"> D. Adik bermain di halaman.</label>
+</div></div>
+
+<div class="question" id="q28"><div class="qtext"><b>28.</b> Bacalah kalimat berikut!<br>“Para siswa membersihkan kelas setiap pagi.”<br>Kata kerja berimbuhan yang terdapat pada kalimat tersebut adalah …</div>
+<div class="options">
+<label><input type="radio" name="q28" value="A"> A. Siswa</label>
+<label><input type="radio" name="q28" value="B"> B. Membersihkan</label>
+<label><input type="radio" name="q28" value="C"> C. Kelas</label>
+<label><input type="radio" name="q28" value="D"> D. Setiap pagi</label>
+</div></div>
+
+<div class="question" id="q29"><div class="qtext"><b>29.</b> Kalimat berikut yang menggunakan kata depan “ke” dengan benar adalah …</div>
+<div class="options">
+<label><input type="radio" name="q29" value="A"> A. Ke pasar ibu pergi pagi-pagi.</label>
+<label><input type="radio" name="q29" value="B"> B. Ibu pergi ke pasar pagi-pagi.</label>
+<label><input type="radio" name="q29" value="C"> C. Ke rumah nenek kakak membawa kue.</label>
+<label><input type="radio" name="q29" value="D"> D. Kakak ke sekolah membawa buku.</label>
+</div></div>
+
+<div class="question" id="q30"><div class="qtext"><b>30.</b> Kalimat berikut yang menggunakan ejaan sesuai kaidah adalah …</div>
+<div class="options">
+<label><input type="radio" name="q30" value="A"> A. Ayah bekerja dikantor setiap hari.</label>
+<label><input type="radio" name="q30" value="B"> B. Ayah bekerja di kantor setiap hari.</label>
+<label><input type="radio" name="q30" value="C"> C. Ayah Bekerja Di Kantor Setiap Hari.</label>
+<label><input type="radio" name="q30" value="D"> D. Ayah bekerja di Kantor setiap hari.</label>
+</div></div>
+
+<div class="controls">
+<button type="button" id="submitBtn">Kirim Jawaban</button>
+<button type="button" id="downloadCSV">Unduh CSV</button>
+<button type="reset" id="resetBtn" class="small">Reset Jawaban</button>
+</div>
+<div id="result" class="result" style="display:none"></div>
+<div id="teacherReport" class="result" style="display:none"></div>
+
+</form>
+</div>
+<div class="footer">GURU KELAS 4 SDN CIKETINGUDIK 2  SUHENDRI, S.Pd.I</div>
+</div>
+
+<script>
+const correctAnswers={q1:"A",q2:"B",q3:"C",q4:"D",q5:"A",q6:"B",q7:"B",q8:"C",q9:"A",q10:"B",
+q11:"A",q12:"D",q13:"A",q14:"B",q15:"A",q16:"C",q17:"A",q18:"C",q19:"B",q20:"A",
+q21:"B",q22:"C",q23:"A",q24:"B",q25:"C",q26:"A",q27:"A",q28:"B",q29:"B",q30:"B"};
+
+document.getElementById("submitBtn").addEventListener("click",()=>{
+  const name=document.getElementById("studentName").value.trim();
+  const cls=document.getElementById("studentClass").value.trim();
+  if(!name||!cls){alert("Isi nama dan kelas terlebih dahulu!");return;}
+  let score=0,total=Object.keys(correctAnswers).length;
+  for(let key in correctAnswers){
+    const chosen=document.querySelector(`input[name=${key}]:checked`);
+    if(chosen&&chosen.value===correctAnswers[key])score++;
+  }
+  const percent=((score/total)*100).toFixed(0);
+  const date=new Date();
+  const options={day:"numeric",month:"long",year:"numeric"};
+  const localDate=date.toLocaleDateString("id-ID",options);
+  const time=date.toLocaleTimeString("id-ID");
+  const resultDiv=document.getElementById("result");
+  resultDiv.style.display="block";
+  resultDiv.innerHTML=`<b>Nama:</b> ${name}<br><b>Kelas:</b> ${cls}<br><b>Skor:</b> ${score}/${total} (${percent}%)<br><b>Tanggal:</b> ${localDate} - ${time}`;
+  // simpan sementara untuk laporan guru
+  let data=JSON.parse(sessionStorage.getItem("teacherData")||"[]");
+  data.push({nama:name,kelas:cls,skor:score,percent:percent,tanggal:localDate,waktu:time});
+  data.sort((a,b)=>b.skor-a.skor);
+  sessionStorage.setItem("teacherData",JSON.stringify(data));
+  // tampilkan tabel laporan
+  const rep=document.getElementById("teacherReport");
+  rep.style.display="block";
+  let table="<h3>Laporan Guru</h3><table border='1' cellpadding='6' style='border-collapse:collapse;width:100%'><tr><th>No</th><th>Nama</th><th>Kelas</th><th>Skor</th><th>%</th><th>Tanggal</th><th>Waktu</th><th>Ranking</th></tr>";
+  data.forEach((d,i)=>{table+=`<tr><td>${i+1}</td><td>${d.nama}</td><td>${d.kelas}</td><td>${d.skor}</td><td>${d.percent}</td><td>${d.tanggal}</td><td>${d.waktu}</td><td>${i+1}</td></tr>`});
+  table+="</table><br><button onclick='downloadTeacherCSV()'>Unduh Rekap Guru (CSV)</button> <button onclick='clearTeacherData()'>Hapus Semua Data</button>";
+  rep.innerHTML=table;
+  downloadCSV(name,cls,score,percent,localDate,time);
+});
+
+function downloadCSV(name,cls,score,percent,date,time){
+  const rows=[["Nama","Kelas","Skor","Persentase","Tanggal","Waktu"],[name,cls,score,percent+"%",date,time]];
+  let csvContent="data:text/csv;charset=utf-8,"+rows.map(e=>e.join(",")).join("\n");
+  const link=document.createElement("a");
+  link.setAttribute("href",encodeURI(csvContent));
+  link.setAttribute("download",`hasil_${name}_${cls}.csv`);
+  document.body.appendChild(link);link.click();document.body.removeChild(link);
+}
+function downloadTeacherCSV(){
+  let data=JSON.parse(sessionStorage.getItem("teacherData")||"[]");
+  if(!data.length){alert("Belum ada data siswa!");return;}
+  let csv="Nama,Kelas,Skor,Persentase,Tanggal,Waktu,Ranking\n";
+  data.forEach((d,i)=>{csv+=`${d.nama},${d.kelas},${d.skor},${d.percent}%,${d.tanggal},${d.waktu},${i+1}\n`});
+  const blob=new Blob([csv],{type:"text/csv"});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement("a");
+  a.href=url;a.download="rekap_guru.csv";a.click();URL.revokeObjectURL(url);
+}
+function clearTeacherData(){
+  if(confirm("Hapus semua data rekap guru?")){sessionStorage.removeItem("teacherData");document.getElementById("teacherReport").style.display="none";}
+}
+</script>
+</body>
+</html>
+
+
+
